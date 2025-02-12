@@ -1,0 +1,67 @@
+name: doe_vida_app
+description: "ste projeto tem como objetivo criar um aplicativo que envia dados relacionados à doação de sangue e, em resposta, recebe dados estatísticos sobre o tema."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.2
+
+dependencies:
+  freezed: 2.5.8
+  freezed_annotation: 2.4.4
+  json_annotation: 4.9.0
+  flutter_svg: 2.0.17
+  flutter_launcher_icons: 0.14.3
+  auto_injector: 2.0.5
+  result_dart: 2.0.0
+  signals: 6.0.2
+  dio: 5.8.0+1
+  auto_size_text: 3.0.0
+  fl_chart: 0.70.2
+  flutter:
+    sdk: flutter
+  skeletonizer: 1.4.3
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: 5.0.0
+  json_serializable: 6.9.3
+  build_runner: 2.4.14
+
+flutter_launcher_icons:
+  image_path: "assets/images/coracao.png"
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  adaptive_icon: true
+  adaptive_icon_background: "#ffffff"
+  adaptive_icon_foreground: "assets/images/coracao.png"
+
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/coracao.png
+    - assets/images/coracao.svg
+    - assets/data.json
+
+  fonts:
+    - family: Poppins Light
+      fonts:
+        - asset: assets/fonts/poppins/Poppins-Light.ttf
+
+    - family: Poppins Medium
+      fonts:
+        - asset: assets/fonts/poppins/Poppins-Medium.ttf
+
+    - family: Poppins Regular
+      fonts:
+        - asset: assets/fonts/poppins/Poppins-Regular.ttf
